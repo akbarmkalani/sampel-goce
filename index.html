@@ -13,8 +13,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- cusmos styel -->
-<!--     <link rel="stylesheet" href="assets/css/style.css"> -->
-      <link rel="stylesheet" href="assets/css/minfy.css">
+<!--     -->
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/minfy.css"> 
     <!-- CDN Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </head>
@@ -45,11 +46,11 @@
             <nav class="row px-0 mx-0 justify-content-center align-items-center ">
                 <section class="col-md-12 col-lg-11 position-relative  h-100 ">
                     <div class="row px-0 mx-0   h-100 justify-content-around align-items-center ">
-                        <figure class=" col-2   h-100 row align-items-center">
+                        <figure class="col-5 col-md-3 col-lg-2   h-100 row align-items-center">
                             <img class="w-100" src="assets/img/img01.png" alt="">
                         </figure>
                         <ul
-                            class="d-none d-lg-flex col-lg-10  justify-content-around align-items-center  h-50   mx-0 px-0">
+                            class="d-none d-md-flex col-md-8 col-lg-10  justify-content-around align-items-center  h-50   mx-0 px-0">
                             <div class="d-flex px-0 mx-0 me-5  h-100  align-items-center">
                                 <li class=" d-flex  h-100 active ">
                                     <a class="d-flex  h-100 justify-content-center align-items-center" href="#">home</a>
@@ -77,15 +78,27 @@
                                         href="#">contact</a>
                                 </li>
                             </div>
-                            <div class="row justify-content-around align-items-center">
+                            <div class="row d-none d-lg-flex justify-content-around align-items-center">
                                 <span class="col-2 p-2 px-4  d-flex justify-content-center"><i class="bi bi-basket"
                                         id="_cart"></i></span>
                                 <span class="col-2  p-2 px-4 d-flex justify-content-center" id="search_"><i
                                         class="bi bi-search"></i></span>
                             </div>
                         </ul>
+                         <section class="hamburgerIcon h-100   col-5 d-md-none ">
+                               <div class="row justify-content-end h-100">
+                                    <section class="h-100 d-flex  flex-wrap justify-content-center " id="hamburgerIcon" onclick="hamburgerIcon(this)">
+                                         <span class="col-12 d-flex "></span>
+                                         <span class="col-12 d-flex "></span>
+                                         <span class="col-12 d-flex "></span>
+                                    </section>
+                               </div>
 
+                             
+                         </section>
+                        
 
+                               
 
                     </div>
 
@@ -120,6 +133,36 @@
 
                 </section>
             </nav>
+<!-- humbarger Menu -->
+            <section class=" humbargerMenu col-12  row mx-0 px-0 overflow-hidden"> 
+                <ul class="col-12">
+                    <li class="mt-3 active ">
+                        <a class="d-flex  h-100  align-items-center" href="#">home</a>
+                    </li>
+                    <li class="mt-3 ">
+                        <a class="d-flex  h-100  align-items-center" href="#">page</a>
+                    </li>
+                    <li class="mt-3 ">
+                        <a class="d-flex  h-100  align-items-center"
+                            href="#">overview</a>
+                    </li>
+                    <li class="mt-3">
+                        <a class="d-flex  h-100  align-items-center"
+                            href="#">community</a>
+                    </li>
+                    <li class="mt-3">
+                        <a class="d-flex  h-100  align-items-center"
+                            href="#">store</a>
+                    </li>
+                    <li class="mt-3">
+                        <a class="d-flex  h-100  align-items-center" href="#">blog</a>
+                    </li>
+                    <li class="mt-3 ">
+                        <a class="d-flex  h-100  align-items-center"
+                            href="#">contact</a>
+                    </li>
+                </ul>
+             </section>
             <!-- Search Box start -->
 
             <section class="search-box  row px-0 mx-0 justify-content-center align-items-center  position-absolute">
@@ -143,10 +186,10 @@
                 </section>
 
                 <div
-                    class="row px-0 mx-0 warfare ps-5  justify-content-sm-center justify-content-lg-start align-items-sm-start align-items-lg-center  position-absolute">
+                    class="row px-0 mx-0 warfare ps-5  justify-content-sm-center justify-content-lg-center  align-items-center  position-absolute">
                     <section class=" col-lg-12  col">
-                        <div class="slider-content ">
-                            <h6>world gaming</h6>
+                        <div class="mt-sm-5 mt-md-0  ">
+                            <h6 class="mt-sm-5">world gaming</h6>
                             <h2 class="col col-lg-8">Cod <span>Modern</span> Warfare</h2>
                             <p class="col col-lg-7">Find technology or people for digital projects in public sector and
                                 Find an

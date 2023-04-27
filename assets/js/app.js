@@ -3,7 +3,36 @@ const progressCircle = document.querySelector(".autoplay-progress svg");
 const progressContent = document.querySelector(".autoplay-progress span");
 const friba = document.querySelectorAll('#friba>figure')
 
+/* document.getElementById('hamburgerIcon').addEventListener('click', function(event){
+            _span = event.children
+            console.log(_span);
+})
+ */
+let flag = 1
 
+const _h = document.querySelector('.humbargerMenu').clientHeight
+document.querySelector('.humbargerMenu').style.height = '0'
+console.log(_h);
+
+function hamburgerIcon(event){
+  _span = event.children
+     if(flag % 2){
+     
+      _span[1].style.opacity= '0'
+      _span[0].style.transform='rotate(44deg)'
+      _span[2].style.transform='rotate(-44deg)'
+      document.querySelector('.humbargerMenu').style.height = _h+'px'
+     
+      
+     } else{
+      _span[1].style.opacity= '1'
+      _span[0].style.transform='rotate(0deg)'
+    
+      _span[2].style.transform='rotate(0deg)'
+      document.querySelector('.humbargerMenu').style.height = '0'
+     }
+     flag++
+}
 
 
 document.getElementById('_cart').addEventListener('click', function () {
