@@ -124,7 +124,7 @@ const roSwiper = new Swiper("#myswiper", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    400: {
+    200: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
